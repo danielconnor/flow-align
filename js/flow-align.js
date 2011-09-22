@@ -21,7 +21,7 @@
 
 
     // recurses each node begining from element and splits the words into seperate spans
-    var recurseSplit = function (element) {
+    var recurse = function (element) {
         if (element.nodeName === "STYLE" || element.nodeName === "SCRIPT") return;
 
         var el = element.firstChild;
